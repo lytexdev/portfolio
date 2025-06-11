@@ -933,12 +933,12 @@ nav {
 
 .timeline-item:nth-child(odd) .timeline-content {
     margin-left: auto;
-    margin-right: calc(50% + 3rem);
+    margin-right: calc(50% + 2rem);
 }
 
 .timeline-item:nth-child(even) .timeline-content {
     margin-right: auto;
-    margin-left: calc(50% + 3rem);
+    margin-left: calc(50% + 2rem);
 }
 
 .timeline-dot {
@@ -1027,7 +1027,7 @@ nav {
 }
 
 .timeline-content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
 }
 
