@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initParticles();
     initAge();
     initTimeline();
-    initContactForm();
+    initSkillsAnimation();
+    initHobbiesAnimation();
     initProjectModals();
     initScrollToTop();
     initSmoothScroll();
@@ -79,6 +80,18 @@ function initMobileMenu() {
                 span.style.opacity = '1';
             });
         });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            navMenu.classList.remove('active');
+            const spans = mobileMenuToggle.querySelectorAll('span');
+            spans.forEach(span => {
+                span.style.transform = 'none';
+                span.style.opacity = '1';
+            });
+        }
     });
 }
 
@@ -229,7 +242,7 @@ function initTimeline() {
     const timelineProgress = document.getElementById('timelineProgress');
     
     const observerOptions = {
-        threshold: 0.5,
+        threshold: 0.3,
         rootMargin: '-50px'
     };
     
@@ -251,6 +264,93 @@ function initTimeline() {
     timelineItems.forEach(item => {
         observer.observe(item);
     });
+}
+
+// ========== Skills Animation ==========
+function initSkillsAnimation() {
+    const skillItems = document.querySelectorAll('.tech-item');
+    const levelBars = document.querySelectorAll('.level-bar');
+    
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Animate skill items
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    entry.target.style.transition = 'all 0.5s ease-out';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, 100);
+                
+                // Animate skill level bar if present
+                const levelBar = entry.target.querySelector('.level-bar');
+                if (levelBar) {
+                    const level = levelBar.style.getPropertyValue('--level');
+                    levelBar.style.width = '0';
+                    setTimeout(() => {
+                        levelBar.style.width = level;
+                    }, 300);
+                }
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    skillItems.forEach(item => {
+        observer.observe(item);
+    });
+}
+
+// ========== Hobbies Animation ==========
+function initHobbiesAnimation() {
+    const hobbyCards = document.querySelectorAll('.hobby-card');
+    
+    const observerOptions = {
+        threshold: 0.3,
+        rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(30px)';
+                    
+                    setTimeout(() => {
+                        entry.target.style.transition = 'all 0.6s ease-out';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }, 100);
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    hobbyCards.forEach(card => {
+        observer.observe(card);
+    });
+}
+
+// ========== Project Modals ==========
+function initProjectModals() {
+    const projectCards = document.querySelectorAll('.project-card');
+    const modal = document.getElementById('projectModal');
+    const modalClose = document.getElementById('modalClose');
+    const modalBody = document.getElementById('modalBody');
+    
+    // Prevent modal actions for now since we're using direct links
+    // This is kept for future enhancement
 }
 
 // ========== Scroll to Top ==========
@@ -296,14 +396,7 @@ function initSmoothScroll() {
 
 // ========== Email Protection ==========
 function initEmailProtection() {
-    const emailDisplay = document.getElementById('emailDisplay');
-    const user = 'immanuel';
-    const domain = 'lytex.dev';
-    const email = `${user}@${domain}`;
-    
-    if (emailDisplay) {
-        emailDisplay.innerHTML = `<a href="mailto:${email}">${email}</a>`;
-    }
+    // Email is already in the HTML, this function is kept for future enhancements
 }
 
 // ========== Download CV ==========
