@@ -746,195 +746,506 @@
     </section>
 
     <section class="projects section" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title gradient-text">Meine Open-Source Freizeit Projekte</h2>
-                <p class="section-subtitle">Kleiner Einblick in meine Open-Source Hobby Projekte</p>
+    <div class="container">
+        <div class="section-header">
+            <div class="company-badge open-source">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zM7 13.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm5 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm5 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                </svg>
+                Open Source
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/blog-site.png" alt="Blog Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://lytex.dev" target="_blank"
-                                    class="project-link">Details ansehen</a></button>
+            <h2 class="section-title gradient-text">Meine Freizeit Projekte</h2>
+            <p class="section-subtitle">Einblick in meine Open-Source Hobby Projekte & Experimente</p>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-image">
+                    <img src="images/blog-site.png" alt="Blog Vorschau">
+                    <div class="project-type-badge">Web Development</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Blog-Website über Privacy, Cybersecurity und Datenschutz</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Personal Blog & Knowledge Sharing
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge active">Live</span>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3>Blog</h3>
-                        <p>Meine Blog Webseite, welche über Themen wie Privacy, Cybersecurity und Datenschutz
-                            informiert.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>JavaScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Docker</span>
+                    <h3>Privacy & Security Blog</h3>
+                    <p class="project-description">
+                        Meine persönliche Blog-Website, die über wichtige Themen wie Privacy, Cybersecurity und Datenschutz informiert. 
+                        Entwickelt mit modernen Web-Standards und optimiert für Performance.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag python">Python</span>
+                        <span class="tech-tag frontend">JavaScript</span>
+                        <span class="tech-tag markup">HTML</span>
+                        <span class="tech-tag styling">CSS</span>
+                        <span class="tech-tag devops">Docker</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://lytex.dev" target="_blank" class="project-link-btn primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Live
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/appointly.png" alt="Appointly Vorschau">
+                    <div class="project-type-badge">Web Development</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Webseite für die Verwaltung von Terminen und Terminverwaltung</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Appointment Management
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge development">In Development</span>
+                        </div>
+                    </div>
+                    <h3>Appointly</h3>
+                    <p class="project-description">
+                        Eine moderne Webseite für die Terminbuchung und Verwaltung für Freelancer, Unternehmer und mehr.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag python">Python</span>
+                        <span class="tech-tag styling">FastAPI</span>
+                        <span class="tech-tag frontend">Vue.js</span>
+                        <span class="tech-tag styling">SCSS</span>
+                        <span class="tech-tag devops">Docker</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/Appointly" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/remote-backup.png" alt="Remote Backup Vorschau">
+                    <div class="project-type-badge">Security Tool</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Sicheres Backup-Tool mit Verschlüsselung und Remote-Upload via SSH</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Data Security & Automation
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge stable">Stable</span>
+                        </div>
+                    </div>
+                    <h3>Remote Backup Tool</h3>
+                    <p class="project-description">
+                        Ein CLI-Tool zum sicheren Erstellen, Verschlüsseln und Hochladen von Backups auf Remote-Server. 
+                        Unterstützt Komprimierung, AES-Verschlüsselung und konfigurierbare Aufbewahrungsrichtlinien.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag rust">Rust</span>
+                        <span class="tech-tag linux">Linux</span>
+                        <span class="tech-tag security">Encryption</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/remote-backup" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/coconut.png" alt="Coconut Vorschau">
+                    <div class="project-type-badge">System Management</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Dashboard für die Verwaltung seiner Docker-Container und Server-Resourcen</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            DevOps & Server Management
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge stable">Stable</span>
+                        </div>
+                    </div>
+                    <h3>Coconut Server Dashboard</h3>
+                    <p class="project-description">
+                        Ein modernes Web-Dashboard zur Verwaltung von Docker-Containern und Überwachung von Server-Ressourcen. 
+                        Bietet eine intuitive Benutzeroberfläche für DevOps-Aufgaben.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag python">Python</span>
+                        <span class="tech-tag frontend">Vue.js</span>
+                        <span class="tech-tag styling">SCSS</span>
+                        <span class="tech-tag devops">Docker</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/Coconut" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/lockbox.png" alt="Lockbox Vorschau">
+                    <div class="project-type-badge">Security Tool</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Lokaler Password Manager mit verschlüsseltem Zugang, ähnlich wie KeePass</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Password Security & Privacy
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge stable">Stable</span>
+                        </div>
+                    </div>
+                    <h3>Lockbox Password Manager</h3>
+                    <p class="project-description">
+                        Ein lokaler Password Manager mit starker AES-Verschlüsselung und Master-Passwort-Schutz. 
+                        Keine Cloud-Synchronisation für maximale Privatsphäre und Sicherheit.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag java">Java</span>
+                        <span class="tech-tag security">Encryption</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/lockbox" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/file-upload-site.png" alt="File Upload Vorschau">
+                    <div class="project-type-badge">Web Application</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Sichere File-Upload Webseite mit passwortgeschützten Downloads</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            File Sharing & Security
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge stable">Stable</span>
+                        </div>
+                    </div>
+                    <h3>Secure File Upload</h3>
+                    <p class="project-description">
+                        Eine einfache aber sichere Webseite zum Hochladen von Dateien mit passwortgeschützten Downloads. 
+                        Ideal für temporäres File-Sharing mit Kontrolle über den Zugriff.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag python">Python</span>
+                        <span class="tech-tag markup">HTML</span>
+                        <span class="tech-tag devops">Docker</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/file-upload" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/muffin-bot.png" alt="Muffin Discord Bot Vorschau">
+                    <div class="project-type-badge">Discord Bot</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Discord-Bot für OSINT-Untersuchungen und Netzwerkerkundung</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            OSINT & Network Security
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge stable">Stable</span>
+                        </div>
+                    </div>
+                    <h3>Muffin OSINT Bot</h3>
+                    <p class="project-description">
+                        Discord-Bot für OSINT-Untersuchungen und allgemeine Netzwerkerkundung. Enthält Tools zum Scannen der Website-Security, 
+                        IP-Checks, DNS-Lookups, SEO-Checks und mehr für Cybersecurity-Analysen.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag python">Python</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/muffin-bot" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/gyad.png" alt="Gyad Vorschau">
+                    <div class="project-type-badge">API Backend</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Lightweight backend system für schnelle API-Daten Verwaltung</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            API Development & Data Management
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge stable">Stable</span>
+                        </div>
+                    </div>
+                    <h3>Gyad - Get Your API Data</h3>
+                    <p class="project-description">
+                        Ein lightweight Backend-System für API-Daten, die schnell und einfach zu verwalten sind. 
+                        Perfekt für Prototyping und kleine Projekte mit minimaler Konfiguration.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag go">Go</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/Gyad" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/file-shredder.png" alt="Secure File Shredder Vorschau">
+                    <div class="project-type-badge">Security Tool</div>
+                    <div class="project-overlay">
+                        <div class="project-preview-text">Sicherer Dateishredder für unwiederrufliches Löschen</div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <div class="project-client">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Data Security & Privacy
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge stable">Stable</span>
+                        </div>
+                    </div>
+                    <h3>Secure File Shredder</h3>
+                    <p class="project-description">
+                        Sicherer Dateishredder um Dateien unwiederruflich zu löschen, so dass sie selbst von 
+                        Forensic-Tools nicht wiederhergestellt werden können. Mehrfaches Überschreiben nach DoD-Standards.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag python">Python</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/lytexdev/file-shredder" target="_blank" class="project-link-btn secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                                GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/coconut.png" alt="Coconut Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/Coconut" target="_blank"
-                                    class="project-link">Details ansehen</a></button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Coconut</h3>
-                        <p>Dashboard für die Verwaltung seiner Docker-Container und Server-Resourcen.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Vue.js</span>
-                            <span>SCSS</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/remote-backup.png" alt="Remote Backup Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/remote-backup"
-                                    target="_blank" class="project-link">Details ansehen</a></button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Remote Backup</h3>
-                        <p>Ein Tool zum sicheren Erstellen, Verschlüsseln und Hochladen von Backups auf einen
-                            Remote-Server über SSH.
-                            Es unterstützt Komprimierung, Verschlüsselung und konfigurierbare
-                            Backup-Aufbewahrungsrichtlinien.
-                        </p>
-                        <div class="project-tech">
-                            <span>Rust</span>
-                            <span>Linux</span>
-                            <span>Encryption</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/lockbox.png" alt="Lockbox Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/lockbox" target="_blank"
-                                    class="project-link">Details ansehen</a></button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Lockbox</h3>
-                        <p>Lokaler Password Manager mit verschlüsseltem Zugang und Master-Passwort - ähnlich wie
-                            KeePass.</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>Encryption</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/file-upload-site.png" alt="File Upload Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/file-upload"
-                                    target="_blank" class="project-link">Details ansehen</a></button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>File Upload</h3>
-                        <p>Eine einfache Webseite zum Hochladen von Dateien mit passwortgeschützten Downloads.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>HTML</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/muffin-bot.png" alt="Muffin Discord Bot Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/muffin-bot"
-                                    target="_blank" class="project-link">Details ansehen</a></button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Muffin Bot</h3>
-                        <p>Discord-Bot für OSINT-Untersuchungen und allgemeine Netzwerkerkundung. Er enthält Tools zum
-                            Scannen der Webseite-Security, IP-Checks, DNS-Lookups, SEO-Check und mehr.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/gyad.png" alt="Gyad Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/Gyad" target="_blank"
-                                    class="project-link">Details ansehen</a></button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Gyad - Get Your API Data</h3>
-                        <p>Lightweight backend system für API-Daten, die schnell und einfach zu verwalten sind.</p>
-                        <div class="project-tech">
-                            <span>Go</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/file-shredder.png" alt="Secure File Shredder Vorschau">
-                        <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/file-shredder"
-                                    target="_blank" class="project-link">Details ansehen</a></button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Secure File Shredder</h3>
-                        <p>Sicherer Dateishredder um Dateien unwiederruflich zu löschen, so dass sie selbst von
-                            Forensic-Tools nicht wiederhergestellt werden kann.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="project-card">
                     <div class="project-image">
                         <img src="images/rclock.png" alt="Rclock Vorschau">
+                        <div class="project-type-badge">CLI Tool</div>
                         <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/rclock" target="_blank"
-                                    class="project-link">Details ansehen</a></button>
+                            <div class="project-preview-text">Command-line Stopuhr, Alarm und Pomodoro Timer</div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Rclock</h3>
-                        <p>Command-line Stopuhr, Alarm und Pomodoro Timer.</p>
+                        <div class="project-meta">
+                            <div class="project-client">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                Productivity & Time Management
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge stable">Stable</span>
+                            </div>
+                        </div>
+                        <h3>Rclock Timer Suite</h3>
+                        <p class="project-description">
+                            Command-line Stopuhr, Alarm und Pomodoro Timer. Ein einfaches aber effektives Produktivitäts-Tool 
+                            für das Terminal mit minimaler Ressourcennutzung.
+                        </p>
+
                         <div class="project-tech">
-                            <span>Rust</span>
+                            <span class="tech-tag rust">Rust</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/lytexdev/rclock" target="_blank" class="project-link-btn secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image">
                         <img src="images/ask-her-valentine.png" alt="Ask her Valentine Vorschau">
+                        <div class="project-type-badge">Fun Project</div>
                         <div class="project-overlay">
-                            <button class="project-view"><a href="https://github.com/lytexdev/ask-her-valentine"
-                                    target="_blank" class="project-link">Details ansehen</a></button>
+                            <div class="project-preview-text">Interaktive Webseite für romantische Valentine-Anfragen</div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Ask her Valentine</h3>
-                        <p>Eine interaktive Webseite um seine Freundin oder Freund zu bitten, dein Valentine zu sein.
-                        </p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Docker</span>
+                        <div class="project-meta">
+                            <div class="project-client">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                                Fun & Interactive Web Apps
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge active">Live</span>
+                            </div>
                         </div>
+                        <h3>Ask Her Valentine</h3>
+                        <p class="project-description">
+                            Eine interaktive und spielerische Webseite um seine Freundin oder Freund zu bitten, dein Valentine zu sein. 
+                            Mit süßen Animationen und personalisierbaren Elementen.
+                        </p>
+
+                        <div class="project-tech">
+                            <span class="tech-tag frontend">JavaScript</span>
+                            <span class="tech-tag markup">HTML</span>
+                            <span class="tech-tag styling">CSS</span>
+                            <span class="tech-tag devops">Docker</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/lytexdev/ask-her-valentine" target="_blank" class="project-link-btn secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-stats">
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Open Source Projekte</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Programmiersprachen</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Jahre aktive Entwicklung</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Leidenschaft für Code und Technik</div>
                     </div>
                 </div>
             </div>
@@ -945,60 +1256,95 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title gradient-text">Sonstige Hobbys & Interessen</h2>
-                <p class="section-subtitle">Was mich in meiner Freizeit sonst noch begeistert</p>
+                <p class="section-subtitle">Was mich in meiner Freizeit sonst noch begeistert, antreibt und interessiert</p>
             </div>
-            <div class="hobbies-grid">
-                <div class="hobby-card">
-                    <div class="hobby-icon-wrapper">
-                        <div class="hobby-icon">🏠</div>
-                        <div class="hobby-icon-bg"></div>
+            
+            <div class="hobbies-showcase">
+                <div class="hobby-card homelab">
+                    <div class="hobby-background">
+                        <div class="hobby-pattern"></div>
                     </div>
-                    <h3>Homelab</h3>
-                    <p>Ich betreibe meinen eigenen Home-Server, wo ich verschiedene Services selbst hoste. Von Nextcloud
-                        für
-                        meine Dateien bis zu Jellyfin für meine Mediensammlung - ich liebe es, meine eigene
-                        Infrastruktur zu verwalten.</p>
-                    <div class="hobby-tags">
-                        <span>Self-Hosting</span>
-                        <span>Nextcloud</span>
-                        <span>Jellyfin</span>
-                        <span>Nginx</span>
-                        <span>Docker</span>
-                        <span>Linux</span>
-                        <span>Cloudflare</span>
+                    <div class="hobby-content">
+                        <div class="hobby-header">
+                            <div class="hobby-icon-wrapper">
+                                <div class="hobby-icon">🏠</div>
+                                <div class="hobby-icon-glow"></div>
+                            </div>
+                            <div class="hobby-status">
+                                <span class="status-indicator active"></span>
+                                <span class="status-text">24/7 Online</span>
+                            </div>
+                        </div>
+                        
+                        <h3>Homelab & Self-Hosting</h3>
+                        <p class="hobby-description">
+                            Ich betreibe mein eigenes Homelab mit verschiedenen selbst gehosteten Services. Von Nextcloud für meine Dateien 
+                            bis zu einem Mailserver - ich liebe es, meine eigene digitale Infrastruktur zu verwalten und zu optimieren.
+                        </p>
+
+                        <div class="hobby-highlights">
+                            <div class="highlight-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                </svg>
+                                <span>Eigene Cloud-Infrastruktur</span>
+                            </div>
+                        </div>
+
+                        <div class="hobby-tech-stack">
+                            <span class="tech-badge">Linux</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Nginx</span>
+                            <span class="tech-badge">Cloudflare</span>
+                            <span class="tech-badge">Nextcloud</span>
+                            <span class="tech-badge">Jellyfin</span>
+                            <span class="tech-badge">Mailserver</span>
+                            <span class="tech-badge">Reverse-Proxy</span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="hobby-card">
-                    <div class="hobby-icon-wrapper">
-                        <div class="hobby-icon">🔒</div>
-                        <div class="hobby-icon-bg"></div>
+                    <div class="hobby-background">
+                        <div class="hobby-pattern"></div>
                     </div>
-                    <h3>Cybersecurity</h3>
-                    <p>IT-Sicherheit und Datenschutz faszinieren mich. Ich beschäftige mich mit Netzwerktechnik,
-                        sicheren Systemen und Privacy-Tools, um meine digitale Privatsphäre zu schützen.</p>
-                    <div class="hobby-tags">
-                        <span>Networking</span>
-                        <span>Privacy</span>
-                        <span>Encryption</span>
-                        <span>Anonymity</span>
-                        <span>Security Tools</span>
-                    </div>
-                </div>
-                <div class="hobby-card">
-                    <div class="hobby-icon-wrapper">
-                        <div class="hobby-icon">🥗</div>
-                        <div class="hobby-icon-bg"></div>
-                    </div>
-                    <h3>Ernährung & Fitness</h3>
-                    <p>Ich beschäftige mich sehr gerne mit Ernährung, Biohacking un allgemein Gesundheit. Der Körper
-                        benötigt schließlich
-                        Nährstoffe, um zu gut zu funktieren und leistungsbereit zu sein.
-                    </p>
-                    <div class="hobby-tags">
-                        <span>Fitness</span>
-                        <span>Nutrition</span>
-                        <span>Biohacking</span>
-                        <span>Performance</span>
+                    <div class="hobby-content">
+                        <div class="hobby-header">
+                            <div class="hobby-icon-wrapper">
+                                <div class="hobby-icon">🧬</div>
+                                <div class="hobby-icon-glow"></div>
+                            </div>
+                            <div class="hobby-status">
+                                <span class="status-indicator active"></span>
+                                <span class="status-text">Körperoptimierung</span>
+                            </div>
+                        </div>
+                        
+                        <h3>Fitness & Biohacking</h3>
+                        <p class="hobby-description">
+                            Ich betreibe mein eigenes Homelab mit verschiedenen selbst gehosteten Services. Von Nextcloud für meine Dateien 
+                            bis zu einem Mailserver - ich liebe es, meine eigene digitale Infrastruktur zu verwalten und zu optimieren.
+                        </p>
+
+                        <div class="hobby-highlights">
+                            <div class="highlight-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                </svg>
+                                <span>Eigene Cloud-Infrastruktur</span>
+                            </div>
+                        </div>
+
+                        <div class="hobby-tech-stack">
+                            <span class="tech-badge">Linux</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Nginx</span>
+                            <span class="tech-badge">Cloudflare</span>
+                            <span class="tech-badge">Nextcloud</span>
+                            <span class="tech-badge">Jellyfin</span>
+                            <span class="tech-badge">Mailserver</span>
+                            <span class="tech-badge">Reverse-Proxy</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1008,7 +1354,7 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; <span id="currentYear">2025</span> lytexdev. Made with ☕ in Paderborn.</p>
+                <p>&copy; <span id="currentYear">2025</span> lytexdev. Made with ☕ & ❤ in Paderborn.</p>
                 <div class="social-links">
                     <a href="https://github.com/lytexdev" class="social-link" aria-label="GitHub" title="GitHub"
                         target="_blank" rel="noopener">
@@ -1018,7 +1364,7 @@
                         </svg>
                     </a>
 
-                    <a href="https://www.instagram.com/lytexdev" class="social-link" aria-label="Instagram"
+                    <a href="https://www.instagram.com/immanuelmruk" class="social-link" aria-label="Instagram"
                         title="Instagram" target="_blank" rel="noopener">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path
