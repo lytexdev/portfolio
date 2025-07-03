@@ -1,7 +1,7 @@
 # Scrollfolio
 
 ## Overview
-A modern, interactive portfolio website with smooth scroll animations, responsive design, and a clean layout to showcase your story, skills & projects ->[**Live Demo**](https://lytexdev.github.io/scrollfolio/)
+A modern, interactive portfolio website with smooth scroll animations, responsive design, and a clean layout to showcase your story, skills & projects -> [**Live Demo**](https://lytexdev.github.io/scrollfolio/)
 
 ## Installation
 
